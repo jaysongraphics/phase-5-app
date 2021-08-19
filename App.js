@@ -1,21 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { Stylesheet, Text, View, ImageBackground } from 'react-native';
+import style from './components/style'
+import Quotes from './components/quotes'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+function App() {
+
+  return (   
+
+<View style={style.container}> 
+ <Text style={style.logo}>Selflax</Text>
+     <View style={style.homePage}>  
+      <Text style={style.text}>Get motivated!</Text> 
+    {/* <Tab.Navigator>
+
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Settings" component={SettingsScreen} />
+  
+    </Tab.Navigator> */}
+    
+        <Quotes />   
+       <StatusBar style="auto" />
+      </View>
+  </View> 
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
