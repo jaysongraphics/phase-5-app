@@ -14,28 +14,33 @@ export default style = StyleSheet.create({
     },
   
     logo: {
-      fontSize: 40,
-      marginTop: '40%',
+      fontSize: 30,
+      marginTop: '10%',
     },
 
     text: {
       fontSize: 15,
-      marginTop: '4%',
-      // alignItems: 'center',
+      marginTop: '0%',
       marginLeft: '38%',
     },
     
     quote: {
       fontSize: 50,
-      marginTop: '30%',
+      marginTop: '10%',
     }, 
   
+    // buttons: {
+    //     fontSize: 50,
+    //     marginBottom: '300%',
+    //     color: 'black',
+    //   }, 
+
     title: {
       // marginTop: '30%',
       // marginBottom: 750,
       width: '100%',
       alignItems: 'center',
-      height: '100%',
+      height: '',
     }
   });
   
